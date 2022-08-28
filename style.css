@@ -33,9 +33,21 @@ li a:hover {
   align-items: flex-end;
   margin-bottom: 30px;
 }
-ul {
+@media screen and (max-width: 768px) {
+  .align {
+    flex-direction: column;
+  }
+}
+
+.meniu ul {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 450px) {
+  .meniu ul {
+    width: 300px;
+    gap: 10px;
+  }
 }
 .img-titlu {
   transition: all 0.5s;
@@ -46,6 +58,16 @@ ul {
 .titlu {
   margin: 30px 0 30px 0;
   color: #dc853d;
+}
+@media screen and (max-width: 768px) {
+  img.img-titlu {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 450px) {
+  img.img-titlu {
+    max-width: 325px;
+  }
 }
 .blockquote {
   background-color: #dc853d;
@@ -77,4 +99,11 @@ cite {
   position: absolute;
   top: 700px;
   right: 720px;
+}
+@media screen and (max-width: 450px) {
+  .btn {
+    position: absolute;
+    top: 1100px;
+    right: 660px;
+  }
 }
